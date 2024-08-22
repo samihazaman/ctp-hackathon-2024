@@ -70,6 +70,26 @@ const QuizView = () => {
     setSelectedQuesElevenOption(option);
   };
 
+  const handleSubmit = () => {
+    if (selectedQuesFourOption === "No" || selectedQuesFiveOption === "Yes") {
+      navigate("/housing");
+
+    }
+    else if (selectedQuesSixOption === "No" || selectedQuesSevenOption === "Yes") {
+      navigate("/food");
+    }
+    else if (selectedQuesEightOption === "Yes" || selectedQuesNineOption === "Yes") {
+      navigate("/mental-health");
+    }
+    else if (selectedQuesTenOption === "No" || selectedQuesElevenOption === "Yes") {
+      navigate("/safety");
+    }
+    else{
+      navigate("/");
+    }
+
+  };
+
 
   // Navigate based on the selected option
   //if the user answer is no, take them back to home page
@@ -77,21 +97,7 @@ const QuizView = () => {
     if (selectedQuesOneOption === "No") {
       navigate("/");
     }
-    else if (selectedQuesFiveOption!="" && (selectedQuesFourOption === "No" || selectedQuesFiveOption === "Yes")) {
-      navigate("/housing");
-
-    }
-    else if (selectedQuesSevenOption!="" && (selectedQuesSixOption === "No" || selectedQuesSevenOption === "Yes")) {
-      navigate("/food");
-    }
-    else if (selectedQuesNineOption!="" && (selectedQuesEightOption === "Yes" || selectedQuesNineOption === "Yes")) {
-      navigate("/mental-health");
-    }
-    else if (selectedQuesElevenOption!="" && (selectedQuesTenOption === "No" || selectedQuesElevenOption === "Yes")) {
-      navigate("/safety");
-    }
-    
-  }, [selectedQuesOneOption,selectedQuesFourOption,selectedQuesFiveOption, navigate]);
+  }, [selectedQuesOneOption, navigate]);
 
   return (
     <>
@@ -143,6 +149,7 @@ const QuizView = () => {
             )}
           </>
         )}
+        <button className="submitBtn" onClick={handleSubmit}> Submit</button>
       </div>
     </>
   );
