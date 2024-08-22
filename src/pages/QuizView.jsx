@@ -6,6 +6,11 @@ import QuesTwo from "../components/QuesTwo";
 import QuesThree from "../components/QuesThree";
 import QuesFour from "../components/QuesFour";
 import QuesFive from "../components/QuesFive";
+import QuesSix from "../components/QuesSix";
+import QuesSeven from "../components/QuesSeven";
+import QuesEight from "../components/QuesEight";
+import QuesNine from "../components/QuesNine";
+
 import { useNavigate } from "react-router-dom";
 
 const QuizView = () => {
@@ -14,6 +19,10 @@ const QuizView = () => {
   const [selectedQuesThreeOption, setSelectedQuesThreeOption] = useState(""); //question three answer
   const [selectedQuesFourOption, setSelectedQuesFourOption] = useState(""); //question four answer
   const [selectedQuesFiveOption, setSelectedQuesFiveOption] = useState(""); //question five answer
+  const [selectedQuesSixOption, setSelectedQuesSixOption] = useState(""); //question six answer
+  const [selectedQuesSevenOption, setSelectedQuesSevenOption] = useState(""); //question seven answer
+  const [selectedQuesEightOption, setSelectedQuesEightOption] = useState(""); //question eight answer
+  const [selectedQuesNineOption, setSelectedQuesNineOption] = useState(""); //question nine answer
   const navigate = useNavigate();
 
   //keep track of user selection for question one
@@ -36,6 +45,22 @@ const QuizView = () => {
   const handleQuesFiveOptionChange = (option) => {
     setSelectedQuesFiveOption(option);
   };
+
+  const handleQuesSixOptionChange = (option) => {
+    setSelectedQuesSixOption(option);
+  };
+  const handleQuesSevenOptionChange = (option) => {
+    setSelectedQuesSevenOption(option);
+  };
+  const handleQuesEightOptionChange = (option) => {
+    setSelectedQuesEightOption(option);
+  };
+  const handleQuesNineOptionChange = (option) => {
+    setSelectedQuesNineOption(option);
+  };
+
+
+
   // Navigate based on the selected option
   //if the user answer is no, take them back to home page
   useEffect(() => {
@@ -60,6 +85,26 @@ const QuizView = () => {
                 <QuesFive
                   onOptionChange={handleQuesFiveOptionChange}
                 ></QuesFive>
+              </>
+            )}
+            {selectedQuesThreeOption === "Food Insecurity" && (
+              <>
+                <QuesSix
+                  onOptionChange={handleQuesSixOptionChange}
+                ></QuesSix>
+                <QuesSeven
+                  onOptionChange={handleQuesSevenOptionChange}
+                ></QuesSeven>
+              </>
+            )}
+            {selectedQuesThreeOption === "Mental Health" && (
+              <>
+                <QuesEight
+                  onOptionChange={handleQuesEightOptionChange}
+                ></QuesEight>
+                <QuesNine
+                  onOptionChange={handleQuesNineOptionChange}
+                ></QuesNine>
               </>
             )}
           </>

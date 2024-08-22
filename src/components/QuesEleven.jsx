@@ -1,7 +1,7 @@
 import React from "react";
 import "./Components.css";
 
-const QuesEight = ({ onOptionChange }) => {
+const QuesEleven = ({ onOptionChange }) => {
   const handleRadioChange = (event) => {
     const labelValue = event.target.nextSibling.textContent;
     onOptionChange(labelValue);
@@ -12,8 +12,7 @@ const QuesEight = ({ onOptionChange }) => {
       <form>
         <div className="quesBox">
           <label htmlFor="quesOne">
-          Are you experiencing stress, anxiety, or depression that is affecting your daily life or academic performance?
-
+          Have you experienced any recent incidents that affected your safety?
           </label>
           <div className="quesAns">
             <input
@@ -38,4 +37,4 @@ const QuesEight = ({ onOptionChange }) => {
   );
 };
 
-export default QuesEight;
+export default QuesEleven;
