@@ -10,6 +10,7 @@ import QuesSix from "../components/QuesSix";
 import QuesSeven from "../components/QuesSeven";
 import QuesEight from "../components/QuesEight";
 import QuesNine from "../components/QuesNine";
+import QuesTen from "../components/QuesTen";
 
 import { useNavigate } from "react-router-dom";
 
