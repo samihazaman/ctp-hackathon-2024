@@ -9,9 +9,7 @@ const Navbar = () => {
         <nav className="shadow-lg sticky top-0">
            <div className="logo">
            <img src={logo} alt="Logo" className="navbar-logo" />
-
            </div>
-
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/food">Food</Link></li>
@@ -20,6 +18,7 @@ const Navbar = () => {
                 <li><Link to="/safety">Safety</Link></li>
                 <li><Link to="/quiz">Quiz</Link></li>
             </ul>
+
         </nav>
     );
 }
