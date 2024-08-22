@@ -36,6 +36,8 @@ const Food = () => {
                         className='w-full max-w-[800px] h-auto' 
                     />
                 </div>
+
+                
         </div>
     );
 }
