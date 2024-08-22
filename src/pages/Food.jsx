@@ -45,7 +45,7 @@ const Food = () => {
 
             <div className="grid grid-cols-2 mt-14 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
                 <div className="col-span-1 mb-6">
-                    <img src={food_info} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
+                    <img src={food_info} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
                     <h2 className="font-bold mb-2">CAMPUS FOOD PANTRIES</h2>
                     <p>
                         Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
@@ -54,7 +54,7 @@ const Food = () => {
                 </div>
                 
                 <div className="col-span-1 mb-6">
-                    <img src={food_info2} alt="Community Food Resources" className="w-full h-auto mb-8" />
+                    <img src={food_info2} alt="Community Food Resources" className="w-full h-auto mb-8 drop-shadow-xl z-0" />
                     <h2 className="font-bold mb-2">COMMUNITY FOOD RESOURCES</h2>
                     <p className='mb-10'>
                         Connect with organizations in your community that can help you access free groceries or hot meals.
@@ -65,16 +65,16 @@ const Food = () => {
             </div>
             <div className="grid grid-cols-2 gap-10 mt-14 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
                     <div className="col-span-1 mb-6">
-                        <img src={food_info3} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
+                        <img src={food_info3} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
                         <h2 className="font-bold mb-2">SNAP FOR CUNY STUDENTS</h2>
-                        <p>
+                        <p className='mb-4'>
                             Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
                         </p>
                         <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/snap-help'>Learn More</a></button>
                     </div>
 
                     <div className="col-span-1 mb-6">
-                        <img src={food_info4} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
+                        <img src={food_info4} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
                         <h2 className="font-bold mb-2">Articles regarding Food Insecurities</h2>
                         <p className='mb-8'>
                         A Report by Healthy CUNY and CUNY Graduate School of Public Health and Health Policy                    </p>
