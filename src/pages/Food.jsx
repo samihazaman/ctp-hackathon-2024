@@ -9,7 +9,7 @@ const Food = () => {
                     <img src={images} alt="Hunger Students" className="w-full h-auto max-w-[600px]" />
                 </div>
 
-                {/*Text Areaa */}
+                {/*Text Area */}
                 <div className="flex flex-col justify-center">
                     <h1 className="font-bold mb-4">
                         What are Food Insecurity?

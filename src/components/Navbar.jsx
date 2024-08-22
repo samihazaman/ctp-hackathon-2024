@@ -6,7 +6,7 @@ import logo from '../assets/CUNY Connect logo.png';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="shadow-lg sticky top-0">
            <div className="logo">
            <img src={logo} alt="Logo" className="navbar-logo" />
 
