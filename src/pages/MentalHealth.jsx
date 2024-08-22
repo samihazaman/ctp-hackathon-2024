@@ -9,7 +9,7 @@ const MentalHealth = () => {
 
 
             <div className='flex justify-center items-center'>
-                <img src={health_image} alt="Hunger Students" className="w-full h-auto max-w-[600px]" />
+                <img src={health_image} alt="Hunger Students" className="w-full h-auto max-w-[600px]  drop-shadow-xl z-0" />
             </div>
 
              {/*Text Area */}
@@ -37,7 +37,7 @@ const MentalHealth = () => {
                 <img 
                     src={health_stats} 
                     alt="Food Insecurity Stats" 
-                    className='w-full max-w-[600px] h-auto' 
+                    className='w-full max-w-[600px] h-auto drop-shadow-xl z-0' 
                 />
             </div>  
 

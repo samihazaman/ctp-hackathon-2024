@@ -11,7 +11,7 @@ const Food = () => {
     return (
         <div className="grid gap-10 pl-20 py-10 grid-cols-2 mr-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
                 <div className='flex justify-center items-center'>
-                    <img src={food_images} alt="Hunger Students" className="w-full h-auto max-w-[600px]" />
+                    <img src={food_images} alt="Hunger Students" className=" drop-shadow-xl z-0 w-full h-auto max-w-[600px]" />
                 </div>
 
                 {/*Text Area */}
@@ -38,19 +38,19 @@ const Food = () => {
                     <img 
                         src={food_stats} 
                         alt="Food Insecurity Stats" 
-                        className='w-full max-w-[800px] h-auto' 
+                        className='w-full max-w-[800px] h-auto drop-shadow-xl z-0' 
                     />
                 </div>
 
 
-            <div className="grid grid-cols-2 mt-10 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
+            <div className="grid grid-cols-2 mt-14 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
                 <div className="col-span-1 mb-6">
                     <img src={food_info} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
                     <h2 className="font-bold mb-2">CAMPUS FOOD PANTRIES</h2>
                     <p>
                         Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
                     </p>
-                    <button className="bg-teal-500 text-white py-2 px-4 mt-4">Learn More</button>
+                    <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/cuny-food-pantries'>Learn More</a></button>
                 </div>
                 
                 <div className="col-span-1 mb-6">
@@ -59,33 +59,28 @@ const Food = () => {
                     <p className='mb-10'>
                         Connect with organizations in your community that can help you access free groceries or hot meals.
                     </p>
-                    <button className="bg-teal-500 text-white py-2 px-4 mt-4">Learn More</button>
+                    <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/cuny-food-pantries'>Learn More</a></button>
                 </div>
-
-                </div>
-                <div className="grid grid-cols-2 gap-10 mt-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
-                <div className="col-span-1 mb-6">
-                    <img src={food_info3} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
-                    <h2 className="font-bold mb-2">CAMPUS FOOD PANTRIES</h2>
-                    <p>
-                        Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
-                    </p>
-                    <button className="bg-teal-500 text-white py-2 px-4 mt-4">Learn More</button>
-                </div>
-
-                <div className="col-span-1 mb-6">
-                    <img src={food_info4} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
-                    <h2 className="font-bold mb-2">Articles regarding Food Insecurities</h2>
-                    <p>
-                    CUNY undergraduate students in summer and fall of 2010 examining food insecurity, housing instability, and a range of mental health issues.                    </p>
-                    <button className="bg-teal-500 text-white py-2 px-4 mt-4">Learn More</button>
-                </div>
-                
 
             </div>
-            
+            <div className="grid grid-cols-2 gap-10 mt-14 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
+                    <div className="col-span-1 mb-6">
+                        <img src={food_info3} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
+                        <h2 className="font-bold mb-2">SNAP FOR CUNY STUDENTS</h2>
+                        <p>
+                            Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
+                        </p>
+                        <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/snap-help'>Learn More</a></button>
+                    </div>
 
-            
+                    <div className="col-span-1 mb-6">
+                        <img src={food_info4} alt="Campus Food Pantries" className="w-full h-auto mb-4" />
+                        <h2 className="font-bold mb-2">Articles regarding Food Insecurities</h2>
+                        <p className='mb-8'>
+                        A Report by Healthy CUNY and CUNY Graduate School of Public Health and Health Policy                    </p>
+                        <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://sph.cuny.edu/wp-content/uploads/2019/03/Report_02_Food-Insecurity_Final.pdf'>Learn More</a></button>
+                    </div>
+            </div>
 
         </div>
     );

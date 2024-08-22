@@ -24,7 +24,7 @@ const Housing = () => {
                 <img 
                     src={housing_stats} 
                     alt="Food Insecurity Stats" 
-                    className='w-full max-w-[800px] h-auto' 
+                    className='w-full max-w-[800px] h-auto  drop-shadow-xl z-0' 
                 />
             </div>  
 
@@ -42,7 +42,7 @@ const Housing = () => {
         </div>
 
         <div className='flex justify-center items-center'>
-            <img src={housing_image} alt="Hunger Students" className="w-full h-auto max-w-[700px]" />
+            <img src={housing_image} alt="Hunger Students" className="w-full h-auto max-w-[700px]  drop-shadow-xl z-0" />
         </div>
         
     </div>
