@@ -7,26 +7,26 @@ import Housing from './pages/Housing';
 import MentalHealth from './pages/MentalHealth';
 import Safety from './pages/Safety';
 import Quiz from './pages/Quiz';
+import QuizView from './pages/QuizView'
 
-import './App.css';
+
 
 function App() {
   return (
     <Router>
-    <div>
+      <div>
         <Navbar />
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/food" element={<Food />} />
-            <Route path="/housing" element={<Housing />} />
-            <Route path="/mental-health" element={<MentalHealth />} />
-            <Route path="/safety" element={<Safety />} />
-            <Route path="/quiz" element={<Quiz />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/food" element={<Food />} />
+          <Route path="/housing" element={<Housing />} />
+          <Route path="/mental-health" element={<MentalHealth />} />
+          <Route path="/safety" element={<Safety />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quizview" element={<QuizView />} />
         </Routes>
-    </div>
-</Router>
-
-  
+      </div>
+    </Router>
   );
 }
 
