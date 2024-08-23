@@ -1,4 +1,4 @@
-/* body {
+body {
     background-color: #F5F5F5;
 }
 
@@ -61,7 +61,6 @@ nav ul li a:active {
     box-shadow: 0px 0px 12px 3px rgba(0, 86, 179, 0.75); 
 }
 
-*/
 
 /* Custom CSS to handle the dropdown menu */
 ul {
