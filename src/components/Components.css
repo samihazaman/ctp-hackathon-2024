@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #F5F5F5;
 }
 
@@ -66,4 +66,29 @@ nav ul li a:active {
    padding-top: 1em;
    padding-bottom: 1em;
    padding-left: 1em;
+} */
+
+/* Custom CSS to handle the dropdown menu */
+ul {
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+}
+
+ul li a:hover,
+ul li a:focus {
+    color: #007bff;
+}
+
+@media (min-width: 1024px) { /* Tailwind's lg breakpoint */
+    ul {
+        display: flex;
+        gap: 12px;
+    }
+
+    ul.flex-col {
+        display: none;
+    }
 }
