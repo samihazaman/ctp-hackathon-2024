@@ -1,5 +1,5 @@
 import React from 'react';
-import housing_image from '../assets/Housing-images/CUNY-Hunter-College_1-1000x750.jpg';
+import housing_info from '../assets/Housing-images/CUNY-Hunter-College_1-1000x750.jpg';
 import housing_stats from "../assets/Housing-images/housing_insecurity.jpg";
 import housing_info1 from "../assets/Housing-images/housing_1.jpg";
 import housing_info2 from "../assets/Housing-images/housing_2.jpg";
@@ -8,268 +8,262 @@ import { useLocation } from 'react-router-dom';
 
 const Housing = () => {
     const location = useLocation();
-    const college = location.state?.college.trim() || ""; // Safely r
+    const college = location.state?.college.trim() || ""; 
     console.log(college)
     const renderCollegeContent = () => {
         switch (college) {
             case 'The City College Of New York':
-                return (
-                    <>
-                <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                    <div className="grid grid-cols-2 mt-14 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
-                        <div className="col-span-1 mb-6">
-                            <img src={housing_image} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                            <h2 className="font-bold mb-2">CAMPUS FOOD PANTRIES</h2>
-                            <p>
-                                Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
-                            </p>
-                            <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/cuny-food-pantries'>Learn More</a></button>
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Campus Housing Resources</h2>
+                                <p>City College of New York offers various housing resources and support through its LGBTQ Student Center.</p>
+                                <button className="bg-indigo-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-indigo-800">
+                                    <a href='https://www.ccny.cuny.edu/lgbtq-student-center/campus-resources-0?srsltid=AfmBOoork0wQYBZQpAgFVjbtUKRHKXBOY1xMSn8s42To_HCOKwakEW64'>Learn More</a>
+                                </button>
+                            </div>
                         </div>
-                        
-                        <div className="col-span-1 mb-6">
-                            <img src={housing_info1} alt="Community Food Resources" className="w-full h-auto mb-8 drop-shadow-xl z-0" />
-                            <h2 className="font-bold mb-2">COMMUNITY FOOD RESOURCES</h2>
-                            <p className='mb-10'>
-                                Connect with organizations in your community that can help you access free groceries or hot meals.
-                            </p>
-                            <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/community-food-resources'>Learn More</a></button>
+                        </>
+                    );
+
+                case 'Brooklyn College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Brooklyn College Housing Resources</h2>
+                                <p>Brooklyn College provides various housing resources and emergency grants for students.</p>
+                                <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                                    <a href='https://www.brooklyn.edu/lgi/housing/'>Learn More</a>
+                                </button>
+                                <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                                    <a href='https://www.brooklyn.edu/student-affairs/student-emergency-grant/'>Emergency Grant</a>
+                                </button>
+                                <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                                    <a href='https://www.brooklyn.edu/admissions-aid/financial-aid-scholarships/resources/services/appeals-and-special-circumstances/appeal-process/'>Appeal Process</a>
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                        </>
+                    );
 
-                    <div className="grid grid-cols-2 gap-10 mt-14 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
-                            <div className="col-span-1 mb-6">
-                                <img src={housing_info1} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                                <h2 className="font-bold mb-2">SNAP FOR CUNY STUDENTS</h2>
-                                <p className='mb-4'>
-                                    Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
-                                </p>
-                                <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/snap-help'>Learn More</a></button>
-                            </div>
-
-                            <div className="col-span-1 mb-6">
-                                <img src={housing_stats} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                                <h2 className="font-bold mb-2">Articles regarding Food Insecurities</h2>
-                                <p className='mb-8'>
-                                A Report by Healthy CUNY and CUNY Graduate School of Public Health and Health Policy                    </p>
-                                <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://sph.cuny.edu/wp-content/uploads/2019/03/Report_02_Food-Insecurity_Final.pdf'>Learn More</a></button>
-                            </div>
-                    </div>
-                </div>
-                    </>
-                );
-            case 'Brooklyn College':
-                return (
-                    <>
-                <div className='grid grid-cols-2 gap-10 m-6'>
-                    <div className="grid grid-cols-2 mt-14 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
-                        <div className="col-span-1 mb-6">
-                            <img src={housing_image} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                            <h2 className="font-bold mb-2">CAMPUS FOOD PANTRIES</h2>
-                            <p>
-                                Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
-                            </p>
-                            <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/cuny-food-pantries'>Learn More</a></button>
-                        </div>
-                        
-                        <div className="col-span-1 mb-6">
-                            <img src={housing_image} alt="Community Food Resources" className="w-full h-auto mb-8 drop-shadow-xl z-0" />
-                            <h2 className="font-bold mb-2">COMMUNITY FOOD RESOURCES</h2>
-                            <p className='mb-10'>
-                                Connect with organizations in your community that can help you access free groceries or hot meals.
-                            </p>
-                            <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/community-food-resources'>Learn More</a></button>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-10 mt-14 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
-                            <div className="col-span-1 mb-6">
-                                <img src={housing_info1} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                                <h2 className="font-bold mb-2">SNAP FOR CUNY STUDENTS</h2>
-                                <p className='mb-4'>
-                                    Many CUNY campuses have food pantries where students can get free fresh foods. Some even provide packaged or prepared food. Stop by your campus food pantry to see what services are available for those in need.
-                                </p>
-                                <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/snap-help'>Learn More</a></button>
-                            </div>
-
-                            <div className="col-span-1 mb-6">
-                                <img src={housing_image} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                                <h2 className="font-bold mb-2">Articles regarding Food Insecurities</h2>
-                                <p className='mb-8'>
-                                A Report by Healthy CUNY and CUNY Graduate School of Public Health and Health Policy                    </p>
-                                <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://sph.cuny.edu/wp-content/uploads/2019/03/Report_02_Food-Insecurity_Final.pdf'>Learn More</a></button>
-                            </div>
-                    </div>
-                </div>
-                    </>
-                );
-                case 'College of Staten Island':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for College of Staten Island */}
-                            </div>
-                        </>
-                    );
-                case 'York College':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for York College */}
-                            </div>
-                        </>
-                    );
-                case 'Lehman College, CUNY':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Lehman College, CUNY */}
-                            </div>
-                        </>
-                    );
-                case 'LaGuardia Community College':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for LaGuardia Community College */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY School of Law':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY School of Law */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY Graduate School of Public Health & Health Policy':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY Graduate School of Public Health & Health Policy */}
-                            </div>
-                        </>
-                    );
-                case 'Hunter College':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Hunter College */}
-                            </div>
-                        </>
-                    );
-                case 'New York City College of Technology':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for New York City College of Technology */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY School of Professional Studies | CUNY SPS':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY School of Professional Studies | CUNY SPS */}
-                            </div>
-                        </>
-                    );
-                case 'Medgar Evers College, CUNY':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Medgar Evers College, CUNY */}
-                            </div>
-                        </>
-                    );
-                case 'John Jay College of Criminal Justice':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for John Jay College of Criminal Justice */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY Graduate Center':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY Graduate Center */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY School of Labor and Urban Studies':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY School of Labor and Urban Studies */}
-                            </div>
-                        </>
-                    );
-                case 'CUNY School of Medicine':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for CUNY School of Medicine */}
-                            </div>
-                        </>
-                    );
-                case 'Queens College, City University of New York':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Queens College, City University of New York */}
-                            </div>
-                        </>
-                    );
-                case 'Baruch College':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Baruch College */}
-                            </div>
-                        </>
-                    );
-                case 'Kingsborough Community College':
-                    return (
-                        <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Kingsborough Community College */}
-                            </div>
-                        </>
-                    );
                 case 'Borough of Manhattan Community College':
                     return (
                         <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Borough of Manhattan Community College */}
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Housing Options</h2>
+                                <p>BMCC offers various housing options and resources for students, including NYC area shelters.</p>
+                                <button className="bg-gray-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-gray-800">
+                                    <a href='https://www.bmcc.cuny.edu/student-affairs/arc/housing-options/nyc-area-shelters/'>NYC Area Shelters</a>
+                                </button>
+                                <button className="bg-gray-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-gray-800">
+                                    <a href='https://www.bmcc.cuny.edu/student-affairs/arc/housing-options/'>More Housing Options</a>
+                                </button>
                             </div>
+                        </div>
                         </>
                     );
-                case 'Hostos Community College':
+
+                case 'Queens College':
                     return (
                         <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Hostos Community College */}
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Student Emergency Grant</h2>
+                                <p>Queens College offers emergency grants for students facing housing challenges.</p>
+                                <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                    <a href='https://www.qc.cuny.edu/sl/student-emergency-grant/'>Learn More</a>
+                                </button>
                             </div>
+                        </div>
                         </>
                     );
-                case 'Macaulay Honors College':
+
+                case 'Kingsborough Community College':
                     return (
                         <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Macaulay Honors College */}
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Fund</h2>
+                                <p>Kingsborough Community College offers emergency funding for students in need of housing support.</p>
+                                <button className="bg-gray-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-gray-800">
+                                    <a href='https://www.kbcc.cuny.edu/admission/EmergencyFund.html'>Learn More</a>
+                                </button>
                             </div>
+                        </div>
                         </>
                     );
-                case 'Craig Newmark Graduate School of Journalism at CUNY':
+
+                case 'College of Staten Island':
                     return (
                         <>
-                            <div className='grid grid-cols-2 gap-10 m-6 max-md:grid-cols-1'>
-                                {/* Content for Craig Newmark Graduate School of Journalism at CUNY */}
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Funding</h2>
+                                <p>The College of Staten Island provides emergency funding for housing and other needs.</p>
+                                <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                                    <a href='https://www.csi.cuny.edu/campus-life/student-services/emergency-funding'>Learn More</a>
+                                </button>
                             </div>
+                        </div>
                         </>
                     );
+
+                case 'York College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Petrie Fund Application</h2>
+                                <p>York College offers emergency funding through the Petrie Fund application.</p>
+                                <button className="bg-yellow-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-yellow-800">
+                                    <a href='https://www.york.cuny.edu/student-development/emergency-funding/petrie-fund-application'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'LaGuardia Community College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Student Homelessness Solutions</h2>
+                                <p>LaGuardia Community College partners with Airbnb to address student homelessness.</p>
+                                <button className="bg-teal-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-teal-800">
+                                    <a href='https://www.laguardia.edu/news/laguardia-community-college-partners-with-airbnb-to-address-student-homelessness/'>Learn More</a>
+                                </button>
+                                <button className="bg-teal-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-teal-800">
+                                    <a href='https://www.laguardia.edu/cares/'>CARES Program</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'Lehman College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Community Resources</h2>
+                                <p>Lehman College provides community resources to support students with housing and other needs.</p>
+                                <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                    <a href='https://www.lehman.edu/student-affairs/community-engagement/community-resources.php'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'Hunter College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">HCLPP Resources</h2>
+                                <p>Hunter College offers resources through the HCLPP program to support students facing housing issues.</p>
+                                <button className="bg-purple-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-purple-800">
+                                    <a href='https://www.hunter.cuny.edu/hclpp/resources'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'New York City College of Technology':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Resource Services</h2>
+                                <p>NYC College of Technology provides emergency resource services for housing and other needs.</p>
+                                <button className="bg-teal-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-teal-800">
+                                    <a href='https://www.citytech.cuny.edu/ssc/Emergency-resource-services.aspx'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'Medgar Evers College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Student Success</h2>
+                                <p>Medgar Evers College provides support through its Student Success program, including housing assistance.</p>
+                                <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                    <a href='https://www.mec.cuny.edu/student-success/transition-academy/'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'John Jay College of Criminal Justice':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Funding</h2>
+                                <p>John Jay College offers emergency funding resources to support students with housing needs.</p>
+                                <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                    <a href='https://www.jjay.cuny.edu/student-life/wellness-center/emergency-funding'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'CUNY School of Labor and Urban Studies':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Funding</h2>
+                                <p>CUNY School of Labor and Urban Studies provides emergency funding to support housing needs.</p>
+                                <button className="bg-gray-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-gray-800">
+                                    <a href='https://slu.cuny.edu/tuition-and-financial-aid/education-financing/emergency-funding/'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'Baruch College':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Emergency Funds</h2>
+                                <p>Baruch College provides emergency funds for students facing housing and other challenges.</p>
+                                <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                    <a href='https://studentaffairs.baruch.cuny.edu/dean-of-students/emergencyfunds/'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
                 default:
                     return null; // No content for unrecognized schools
             }   
@@ -314,7 +308,7 @@ const Housing = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-                <img src={housing_image} alt="Hunger Students" className="w-full h-auto max-w-[700px] drop-shadow-xl z-0" />
+                <img src={housing_info} alt="Hunger Students" className="w-full h-auto max-w-[700px] drop-shadow-xl z-0" />
             </div>
             
             <div className="grid grid-cols-2 mt-14 gap-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
