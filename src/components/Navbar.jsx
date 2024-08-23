@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link } from 'react-router-dom'; // Ensure this is the correct import for your setup
 import logo from '../assets/CUNY Connect logo.png'; // Update the path as needed
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [animationClass, setAnimationClass] = useState('');
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            setAnimationClass('dropdown-enter');
+        } else {
+            setAnimationClass('dropdown-exit');
+        }
+    }, [isOpen]);
 
     return (
         <nav className="bg-white p-2.5 flex items-center justify-between shadow-lg sticky top-0 z-50">
@@ -35,7 +44,7 @@ const Navbar = () => {
                     />
                 </svg>
             </button>
-            <ul className={`lg:flex lg:items-center lg:gap-12 lg:mr-10 ${isOpen ? 'flex flex-col absolute top-20 right-0 w-full bg-white shadow-lg z-50' : 'hidden lg:flex'}`}>
+            <ul className={`lg:flex lg:items-center lg:gap-12 lg:mr-10 ${isOpen ? `flex flex-col absolute top-20 right-0 w-full bg-white shadow-lg z-50  ${animationClass}` : `hidden lg:flex`}`}>
                 <li className="inline lg:inline-block">
                     <Link
                         to="/"

@@ -2,7 +2,7 @@ body {
     background-color: #F5F5F5;
 }
 
-nav {
+/* nav {
     background-color: white;
     padding: 10px 30px; 
     display: flex; 
@@ -59,7 +59,7 @@ nav ul li a:focus {
 nav ul li a:active {
     color: #0056b3; 
     box-shadow: 0px 0px 12px 3px rgba(0, 86, 179, 0.75); 
-}
+} */
 
 
 /* Custom CSS to handle the dropdown menu */
@@ -92,3 +92,33 @@ ul li a:focus {
     display: none;
   }
 }
+
+@keyframes slideDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+@keyframes slideUp{
+from{
+    transform: translateY(0);
+}
+to{
+    transform: translateY(-20px);
+}
+}
+
+.dropdown-enter {
+animation: slideDown .4s ease-out forwards;
+}
+
+.dropdown-exit {
+animation: slideUp 1.0s ease-in forwards;
+}
+
