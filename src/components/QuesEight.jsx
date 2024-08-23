@@ -18,19 +18,19 @@ const QuesEight = ({ onOptionChange }) => {
           <div className="quesAns">
             <input
               type="radio"
-              name="option"
-              id="yes"
+              name="optionEight"
+              id="yesQuesEight"
               onChange={handleRadioChange}
             />
-            <label htmlFor="yes">Yes</label>
+            <label htmlFor="yesQuesEight">Yes</label>
             <br />
             <input
               type="radio"
-              name="option"
-              id="no"
+              name="optionEight"
+              id="noQuesEight"
               onChange={handleRadioChange}
             />
-            <label htmlFor="no">No</label>
+            <label htmlFor="noQuesEight">No</label>
           </div>
         </div>
       </form>
