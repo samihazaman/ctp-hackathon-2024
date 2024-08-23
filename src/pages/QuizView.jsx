@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import QuesOne from "../components/QuesOne";
@@ -12,7 +11,7 @@ import QuesEight from "../components/QuesEight";
 import QuesNine from "../components/QuesNine";
 import QuesTen from "../components/QuesTen";
 import QuesEleven from "../components/QuesEleven";
-
+import Food from "./Food";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -28,8 +27,8 @@ const QuizView = () => {
   const [selectedQuesNineOption, setSelectedQuesNineOption] = useState(""); //question nine answer
   const [selectedQuesTenOption, setSelectedQuesTenOption] = useState(""); //question ten answer
   const [selectedQuesElevenOption, setSelectedQuesElevenOption] = useState(""); //question eleven answer
+  const [submitted, setSubmitted] = useState(false); //submitted quiz or not
   const navigate = useNavigate();
-  var selectedCollege ="";
 
   //keep track of user selection for question one
   const handleQuesOneOptionChange = (option) => {
@@ -72,26 +71,28 @@ const QuizView = () => {
   };
 
   const handleSubmit = () => {
-    
+    setSubmitted(true);
     if (selectedQuesFourOption === "No" || selectedQuesFiveOption === "Yes") {
       navigate("/housing");
-
-    }
-    else if (selectedQuesSixOption === "No" || selectedQuesSevenOption === "Yes") {
-      navigate("/food");
-    }
-    else if (selectedQuesEightOption === "Yes" || selectedQuesNineOption === "Yes") {
+    } else if (
+      selectedQuesSixOption === "No" ||
+      selectedQuesSevenOption === "Yes"
+    ) {
+      navigate("/food", { state: { college: selectedQuesTwoOption } });
+    } else if (
+      selectedQuesEightOption === "Yes" ||
+      selectedQuesNineOption === "Yes"
+    ) {
       navigate("/mental-health");
-    }
-    else if (selectedQuesTenOption === "No" || selectedQuesElevenOption === "Yes") {
+    } else if (
+      selectedQuesTenOption === "No" ||
+      selectedQuesElevenOption === "Yes"
+    ) {
       navigate("/safety");
-    }
-    else{
+    } else {
       navigate("/");
     }
-
   };
-
 
   // Navigate based on the selected option
   //if the user answer is no, take them back to home page
@@ -99,12 +100,6 @@ const QuizView = () => {
     if (selectedQuesOneOption === "No") {
       navigate("/");
     }
-    if (selectedQuesTwoOption!=""){
-      selectedCollege = selectedQuesTwoOption;
-      console.log("selected a college")
-      console.log(selectedCollege)
-    }
-
   }, [selectedQuesOneOption, navigate]);
 
   return (
@@ -123,16 +118,22 @@ const QuizView = () => {
                 <QuesFive
                   onOptionChange={handleQuesFiveOptionChange}
                 ></QuesFive>
+                <button className="submitBtn" onClick={handleSubmit}>
+                  {" "}
+                  Submit
+                </button>
               </>
             )}
             {selectedQuesThreeOption === "Food Insecurity" && (
               <>
-                <QuesSix
-                  onOptionChange={handleQuesSixOptionChange}
-                ></QuesSix>
+                <QuesSix onOptionChange={handleQuesSixOptionChange}></QuesSix>
                 <QuesSeven
                   onOptionChange={handleQuesSevenOptionChange}
                 ></QuesSeven>
+                <button className="submitBtn" onClick={handleSubmit}>
+                  {" "}
+                  Submit
+                </button>
               </>
             )}
             {selectedQuesThreeOption === "Mental Health" && (
@@ -143,22 +144,30 @@ const QuizView = () => {
                 <QuesNine
                   onOptionChange={handleQuesNineOptionChange}
                 ></QuesNine>
+                <button className="submitBtn" onClick={handleSubmit}>
+                  {" "}
+                  Submit
+                </button>
               </>
             )}
-             {selectedQuesThreeOption === "Safety" && (
+            {selectedQuesThreeOption === "Safety" && (
               <>
-                <QuesTen
-                  onOptionChange={handleQuesTenOptionChange}
-                ></QuesTen>
+                <QuesTen onOptionChange={handleQuesTenOptionChange}></QuesTen>
                 <QuesEleven
                   onOptionChange={handleQuesElevenOptionChange}
                 ></QuesEleven>
+                <button className="submitBtn" onClick={handleSubmit}>
+                  {" "}
+                  Submit
+                </button>
               </>
             )}
           </>
         )}
-        <button className="submitBtn" onClick={handleSubmit}> Submit</button>
       </div>
+      {submitted && selectedQuesThreeOption === "Food Insecurity" && (
+        <Food college={selectedQuesTwoOption} />
+      )}
     </>
   );
 };
