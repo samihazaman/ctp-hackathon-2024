@@ -29,6 +29,7 @@ const QuizView = () => {
   const [selectedQuesTenOption, setSelectedQuesTenOption] = useState(""); //question ten answer
   const [selectedQuesElevenOption, setSelectedQuesElevenOption] = useState(""); //question eleven answer
   const navigate = useNavigate();
+  var selectedCollege ="";
 
   //keep track of user selection for question one
   const handleQuesOneOptionChange = (option) => {
@@ -71,6 +72,7 @@ const QuizView = () => {
   };
 
   const handleSubmit = () => {
+    
     if (selectedQuesFourOption === "No" || selectedQuesFiveOption === "Yes") {
       navigate("/housing");
 
@@ -97,6 +99,12 @@ const QuizView = () => {
     if (selectedQuesOneOption === "No") {
       navigate("/");
     }
+    if (selectedQuesTwoOption!=""){
+      selectedCollege = selectedQuesTwoOption;
+      console.log("selected a college")
+      console.log(selectedCollege)
+    }
+
   }, [selectedQuesOneOption, navigate]);
 
   return (
