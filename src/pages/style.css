@@ -209,6 +209,8 @@
 
 #college {
   border: 2px black solid;
+  width: 16em;
+  font-size: 12px;
 }
 #college:focus {
   border: 2px black solid !important;
