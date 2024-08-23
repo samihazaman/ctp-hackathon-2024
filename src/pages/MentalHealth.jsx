@@ -276,7 +276,7 @@ const MentalHealth = () => {
                     return null; // No content for unrecognized schools
             }   
     };
-    const renderDefaultContent = () => {
+    const renderDefaultContent = () => (
         <div className="grid grid-cols-1 gap-10 pl-20 py-10 md:grid-cols-2 mr-10">
 
             <div className='flex justify-center items-center'>
@@ -333,7 +333,7 @@ const MentalHealth = () => {
                 </div>
                 </div>
         </div>
-    }
+    )
 
     return(
         <div>
