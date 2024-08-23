@@ -7,8 +7,8 @@ import Housing from './pages/Housing';
 import MentalHealth from './pages/MentalHealth';
 import Safety from './pages/Safety';
 import Quiz from './pages/Quiz';
-import QuizView from './pages/QuizView'
-import Footer from './components/Footer'
+import QuizView from './pages/QuizView';
+import Footer from './components/Footer';
 
 
 function App() {

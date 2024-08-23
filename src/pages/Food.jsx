@@ -10,7 +10,7 @@ import food_info4 from "../assets/Food-images/Young-person-delivering-groceries-
 import { useLocation } from 'react-router-dom';
 
 const Food = () => {
-    /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
+  /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
     decide what kind of information needs to be printed*/
     const location = useLocation();
     const college = location.state?.college.trim() || ""; // Safely r
