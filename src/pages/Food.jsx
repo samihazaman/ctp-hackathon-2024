@@ -239,7 +239,7 @@ const Food = () => {
                     </>
                 );
             
-            case 'Queens College':
+            case 'Queens College, City University of New York':
                 return (
                     <>
                     <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
