@@ -243,7 +243,7 @@ const MentalHealth = () => {
             </>
         );
 
-    case 'CUNY School of Professional Studies':
+    case 'CUNY School of Professional Studies | CUNY SPS':
         return (
             <>
             <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">

@@ -223,7 +223,7 @@ const Food = () => {
                     </>
                 );
             
-            case 'John Jay College':
+            case 'John Jay College of Criminal Justice':
                 return (
                     <>
                     <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -319,7 +319,7 @@ const Food = () => {
                     </>
                 );
             
-            case 'Medgar Evers College':
+            case 'Medgar Evers College, CUNY':
                 return (
                     <>
                     <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -334,6 +334,91 @@ const Food = () => {
                     </div>
                     </>
                 );
+
+                case 'CUNY Graduate Center':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={food_info2} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Food Security Resources</h2>
+                                <p>
+                                    The CUNY Graduate Center offers food resources and support for students.
+                                </p>
+                                <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                    <a href='https://www.healthycuny.org/food-security-resources'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+
+                case 'CUNY School of Medicine':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={food_info2} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Food Security Resources</h2>
+                                <p>The CUNY Graduate Center offers food resources and support for students.
+</p>
+                                <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                    <a href='https://www.healthycuny.org/food-security-resources'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+        
+                    case 'Macaulay Honors College':
+                        return (
+                            <>
+                            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                    <img src={food_info2} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                    <h2 className="font-bold mb-2">Food Security Resources</h2>
+                                    <p>The CUNY Graduate Center offers food resources and support for students.
+</p>
+                                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                        <a href='https://www.healthycuny.org/food-security-resources'>Learn More</a>
+                                    </button>
+                                </div>
+                            </div>
+                            </>
+                        );
+                    
+                    case 'Craig Newmark Graduate School of Journalism at CUNY ':
+                        return (
+                        <>
+                            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                    <img src={food_info2} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                    <h2 className="font-bold mb-2">Food Security Resources</h2>
+                                    <p>The CUNY Graduate Center offers food resources and support for students.</p>
+                                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                        <a href='https://www.healthycuny.org/food-security-resources'>Learn More</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </>
+                        );
+
+                    case 'CUNY Graduate School of Public Health & Health Policy':
+                        return (
+                            <>
+                            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                    <img src={food_info2} alt="Campus Food Pantries" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                    <h2 className="font-bold mb-2">Food Security Resources</h2>
+                                    <p>The CUNY Graduate Center offers food resources and support for students.</p>
+                                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                        <a href='https://www.healthycuny.org/food-security-resources'>Learn More</a>
+                                    </button>
+                                </div>
+                            </div>
+                            </>
+                        );
+                
                 default:
                     return null
             }

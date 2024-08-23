@@ -88,7 +88,7 @@ const QuizView = () => {
       navigate("/mental-health", {state: {college: selectedQuesTwoOption}});
     }
     else if (selectedQuesTenOption === "No" || selectedQuesElevenOption === "Yes") {
-      navigate("/safety,", {state: {college: selectedQuesTwoOption}});
+      navigate("/safety", {state: {college: selectedQuesTwoOption}});
     }
     else{
       navigate("/");

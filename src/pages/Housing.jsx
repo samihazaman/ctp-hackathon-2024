@@ -69,7 +69,7 @@ const Housing = () => {
                         </>
                     );
 
-                case 'Queens College':
+                case 'Queens College, City University of New York':
                     return (
                         <>
                         <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -254,8 +254,8 @@ const Housing = () => {
                         <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
                             <div className="col-start-2 col-span-1 mb-6 items-center text-center">
                                 <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
-                                <h2 className="font-bold mb-2">Emergency Funds</h2>
-                                <p>Baruch College provides emergency funds for students facing housing and other challenges.</p>
+                                <h2 className="font-bold mb-2">Emergency Fund</h2>
+                                <p>Baruch College provides emergency fund for students facing housing and other challenges.</p>
                                 <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
                                     <a href='https://studentaffairs.baruch.cuny.edu/dean-of-students/emergencyfunds/'>Learn More</a>
                                 </button>
@@ -264,8 +264,127 @@ const Housing = () => {
                         </>
                     );
 
-                default:
-                    return null; // No content for unrecognized schools
+                    case 'CUNY School of Law':
+                        return (
+                            <>
+                            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                    <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                    <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                    <p>Baruch College provides Housing With CUNY for students facing housing and other challenges.</p>
+                                    <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                        <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                    </button>
+                                </div>
+                            </div>
+                            </>
+                        );
+                        case 'CUNY School of Professional Studies | CUNY SPS':
+                            return (
+                                <>
+                                <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                    <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                        <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                        <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                        <p> 
+                                            CUNY Provides students with housing resources and support for students in need.
+                                        </p>
+                                        <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                            <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                </>
+                            );
+                        case 'CUNY Graduate Center':
+                            return (
+                                <>
+                                <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                    <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                        <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                        <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                        <p> 
+                                        CUNY Provides students with housing resources and support for students in need.
+                                        </p>
+                                        <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                            <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                </>
+                            );
+                        case 'CUNY School of Medicine':
+                            return (
+                                <>
+                                <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                    <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                        <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                        <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                        <p> 
+                                        CUNY Provides students with housing resources and support for students in need.
+                                        </p>
+                                        <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                            <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                </>
+                            );
+                            case 'Macaulay Honors College':
+                                return (
+                                    <>
+                                    <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                        <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                            <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                            <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                            <p> 
+                                            CUNY Provides students with housing resources and support for students in need.
+                                            </p>
+                                            <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                                <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </>
+                                );
+                                case 'Craig Newmark Graduate School of Journalism at CUNY ':
+                                    return (
+                                        <>
+                                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                                <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                                <p> 
+                                                CUNY Provides students with housing resources and support for students in need.
+                                                </p>
+                                                <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                                    <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        </>
+                                    );
+
+                                case 'CUNY Graduate School of Public Health & Health Policy':
+                                    return (
+                                        <>
+                                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                                <h2 className="font-bold mb-2">Housing With CUNY</h2>
+                                                <p> 
+                                                CUNY Provides students with housing resources and support for students in need.
+                                                </p>
+                                                <button className="bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800">
+                                                    <a href='https://www.healthycuny.org/resources-housing-homelessnes/'>Learn More</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        </>
+                                    );
+
+                    default:
+                        return null; // No content for unrecognized schools
             }   
     };
     /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
