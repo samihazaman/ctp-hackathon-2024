@@ -276,7 +276,7 @@ const Housing = () => {
     };
     /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
     decide what kind of information needs to be printed*/
-    return (
+    const renderDefaultContent = () => {
         <div className="grid grid-cols-1 gap-10 items-center justify-center px-4 pl-20 py-10 md:grid-cols-1 md:px-20 md:py-10 mr-5">
             <div className='flex md:flex-col items-center md:gap-10'>
                 <div className='flex flex-col justify-center items-center'>
@@ -339,7 +339,13 @@ const Housing = () => {
             </div>
         
     </div>
-    );
+    }
+
+    return(
+        <div>
+            {college ? renderCollegeContent() : renderDefaultContent()}
+        </div>
+    )
 }
 
 export default Housing;

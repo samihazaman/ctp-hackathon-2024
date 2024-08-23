@@ -12,7 +12,6 @@ const MentalHealth = () => {
 
     const location = useLocation();
     const college = location.state?.college.trim() || ""; // Safely r
-    console.log(college)
     const renderCollegeContent = () => {
         switch (college) {
             case 'The City College Of New York':
@@ -277,7 +276,7 @@ const MentalHealth = () => {
                     return null; // No content for unrecognized schools
             }   
     };
-    return (
+    const renderDefaultContent = () => {
         <div className="grid grid-cols-1 gap-10 pl-20 py-10 md:grid-cols-2 mr-10">
 
             <div className='flex justify-center items-center'>
@@ -302,8 +301,6 @@ const MentalHealth = () => {
                         </p>
                 </div>
             </div>
-
-
             
             <div className="flex justify-center items-center pr-10">
                 <img 
@@ -335,10 +332,14 @@ const MentalHealth = () => {
                     <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://cimh.sph.cuny.edu/'>Learn More</a></button>
                 </div>
                 </div>
-               
-            
         </div>
-    );
+    }
+
+    return(
+        <div>
+            {college ? renderCollegeContent() : renderDefaultContent()}
+        </div>
+    )
 }
 
 export default MentalHealth;

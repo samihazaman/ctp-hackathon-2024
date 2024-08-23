@@ -275,7 +275,7 @@ const Safety = () => {
                     return null; // No content for unrecognized schools
             }   
     };
-    return (
+    const renderDefaultContent = () => {
         <div className="grid gap-10 pl-20 py-10 grid-cols-2 mr-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
                 <div className='col-span-2 max-md:grid-cols-1 max-md:col-span-1'>
                     <img src={security_images} alt="Hunger Students" className=" drop-shadow-xl z-0 w-full h-auto max-w-[1600px]" />
@@ -314,7 +314,13 @@ const Safety = () => {
                     </div>
             </div>
     </div>
-    );
+    }
+
+    return (
+        <div>
+            {college ? renderCollegeContent() : renderDefaultContent()}
+        </div>
+    )
 }
 
 export default Safety;
