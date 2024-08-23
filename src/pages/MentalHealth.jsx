@@ -1,9 +1,8 @@
 import React from 'react';
-import health_image from '../assets/Mental-Health-images/CUNY-wellness-center4.jpg';
 import health_stats from "../assets/Mental-Health-images/MH+infographic.png";
 import mentalhealth_1 from "../assets/Mental-Health-images/mental_health1.jpg";
 import mentalhealth_2 from "../assets/Mental-Health-images/mental_health2.jpg";
-
+import mentalhealth_3 from "../assets/Mental-Health-images/mental_health3.png";
 
 
 const MentalHealth = () => {
@@ -11,7 +10,7 @@ const MentalHealth = () => {
         <div className="grid grid-cols-1 gap-10 pl-20 py-10 md:grid-cols-2 mr-10">
 
             <div className='flex justify-center items-center'>
-                <img src={health_image} alt="Hunger Students" className="w-full h-auto max-w-[600px]  drop-shadow-xl z-0" />
+                <img src={mentalhealth_3} alt="Hunger Students" className="w-full h-auto max-w-[600px]  drop-shadow-xl z-0" />
             </div>
 
              {/*Text Area */}

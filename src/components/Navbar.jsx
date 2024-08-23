@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="shadow-lg sticky top-0 z-10">
            <div className="logo">
-           <img src={logo} alt="Logo" className="navbar-logo" />
+           <a href='/'><img src={logo} alt="Logo" className="navbar-logo" /></a>
            </div>
             <ul>
                 <li><Link to="/">Home</Link></li>

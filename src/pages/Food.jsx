@@ -59,7 +59,7 @@ const Food = () => {
                     <p className='mb-10'>
                         Connect with organizations in your community that can help you access free groceries or hot meals.
                     </p>
-                    <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/cuny-food-pantries'>Learn More</a></button>
+                    <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://www.healthycuny.org/community-food-resources'>Learn More</a></button>
                 </div>
 
             </div>
