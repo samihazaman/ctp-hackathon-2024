@@ -141,7 +141,7 @@ const Safety = () => {
             </>
         );
 
-    case 'Craig Newmark Graduate School of Journalism':
+    case 'Craig Newmark Graduate School of Journalism at CUNY':
         return (
             <>
             <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -189,7 +189,7 @@ const Safety = () => {
             </>
         );
 
-    case 'CUNY School of Labor & Urban Studies':
+    case 'CUNY School of Labor and Urban Studies':
         return (
             <>
             <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -221,7 +221,7 @@ const Safety = () => {
             </>
         );
 
-    case 'CUNY School of Professional Studies':
+    case 'CUNY School of Professional Studies | CUNY SPS':
         return (
             <>
             <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -333,7 +333,7 @@ const Safety = () => {
             </>
         );
 
-    case 'Medgar Evers College':
+    case 'Medgar Evers College, CUNY':
         return (
             <>
             <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
@@ -375,6 +375,73 @@ const Safety = () => {
                     <p>York College provides campus safety and security resources.</p>
                     <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
                         <a href='https://www.york.cuny.edu/administrative/public-safety'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+
+        case 'The City College of New York':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={security_info} alt="Security Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Personal Safety Information</h2>
+                    <p>
+                        City College provides campus safety and security resources.
+                    </p>
+                    <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                        <a href='https://www.cuny.edu/about/administration/offices/publicsafety/personal-safety-information/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+        case ' New York City College of Technology':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={security_info} alt="Security Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Personal Safety Information</h2>
+                    <p>
+                        City Tech provides campus safety and security resources.
+                    </p>
+                    <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                        <a href='https://www.cuny.edu/about/administration/offices/publicsafety/personal-safety-information/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+        case 'CUNY School of Medicine':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={security_info} alt="Security Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Personal Safety Information</h2>
+                    <p>York College provides campus safety and security resources.</p>
+                    <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                        <a href='https://www.cuny.edu/about/administration/offices/publicsafety/personal-safety-information/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+        case 'Macaulay Honors College':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={security_info} alt="Security Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Personal Safety Information</h2>
+                    <p>
+                        Macaulay Honors College provides campus safety and security resources.
+                    </p>
+                    <button className="bg-red-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-red-800">
+                        <a href='https://www.cuny.edu/about/administration/offices/publicsafety/personal-safety-information/'>Learn More</a>
                     </button>
                 </div>
             </div>

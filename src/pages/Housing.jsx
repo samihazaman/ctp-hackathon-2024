@@ -84,6 +84,24 @@ const Housing = () => {
                         </div>
                         </>
                     );
+                case 'Lehman College, CUNY':
+                    return (
+                        <>
+                        <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                            <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                                <img src={housing_info} alt="Campus Housing Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                                <h2 className="font-bold mb-2">Lehman College Community Resources</h2>
+                                <p>
+                                    Lehman College provides community resources to support students with housing and other needs.
+                                </p>
+                                <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                                    <a href='https://www.lehman.edu/student-affairs/community-engagement/community-resources.php'>Learn More</a>
+                                </button>
+                            </div>
+                        </div>
+                        </>
+                    );
+    
 
                 case 'Kingsborough Community College':
                     return (
@@ -200,7 +218,7 @@ const Housing = () => {
                         </>
                     );
 
-                case 'Medgar Evers College':
+                case 'Medgar Evers College, CUNY':
                     return (
                         <>
                         <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">

@@ -339,6 +339,59 @@ const MentalHealth = () => {
             </>
         );
 
+        case 'CUNY School of Labor and Urban Studies':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={mentalhealth_1} alt="Mental Health Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Mental Health Services</h2>
+                    <p>
+                        CUNY School of Labor and Urban Studies provides mental health services for student support.
+                    </p>
+                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                        <a href='https://www.cuny.edu/current-students/student-affairs/student-services/counseling/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+
+        case 'Macaulay Honors College':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={mentalhealth_1} alt="Mental Health Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Mental Health Services</h2>
+                    <p>
+                        Macaulay Honors College provides mental health services for student support.
+                    </p>
+                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                        <a href='https://www.cuny.edu/current-students/student-affairs/student-services/counseling/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+        case 'Craig Newmark Graduate School of Journalism at CUNY':
+        return (
+            <>
+            <div className="grid mt-14 gap-10 grid-cols-3 max-md:items-center max-md:justify-center">
+                <div className="col-start-2 col-span-1 mb-6 items-center text-center">
+                    <img src={mentalhealth_1} alt="Mental Health Resources" className="w-full h-auto mb-4 drop-shadow-xl z-0" />
+                    <h2 className="font-bold mb-2">Mental Health Services</h2>
+                    <p>
+                        Craig Newmark Graduate School of Journalism at CUNY provides mental health services for student support.
+                    </p>
+                    <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-blue-800">
+                        <a href='https://www.cuny.edu/current-students/student-affairs/student-services/counseling/'>Learn More</a>
+                    </button>
+                </div>
+            </div>
+            </>
+        );
+
                 default:
                     return null; // No content for unrecognized schools
             }   
