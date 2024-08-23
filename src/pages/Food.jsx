@@ -1,4 +1,6 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import QuesTwo from '../components/QuesTwo';
 import food_images from '../assets/Food-images/hunger-students-copy.jpg';
 import food_stats from "../assets/Food-images/food-stats.jpg";
 import food_info from "../assets/Food-images/food+pantry.jpg";
@@ -8,8 +10,13 @@ import food_info4 from "../assets/Food-images/Young-person-delivering-groceries-
 
 
 const Food = () => {
+    /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
+    decide what kind of information needs to be printed*/
+ 
+
     return (
         <div className="grid gap-10 pl-20 py-10 grid-cols-2 mr-10 max-md:grid-cols-1 max-md:items-center max-md:justify-center">
+
                 <div className='flex justify-center items-center'>
                     <img src={food_images} alt="Hunger Students" className=" drop-shadow-xl z-0 w-full h-auto max-w-[600px]" />
                 </div>
@@ -80,10 +87,10 @@ const Food = () => {
                         A Report by Healthy CUNY and CUNY Graduate School of Public Health and Health Policy                    </p>
                         <button className="bg-teal-500 text-white py-2 px-4 mt-4"><a href='https://sph.cuny.edu/wp-content/uploads/2019/03/Report_02_Food-Insecurity_Final.pdf'>Learn More</a></button>
                     </div>
-            </div>
+                </div>
 
-        </div>
-    );
+            </div>
+        );
 }
 
 export default Food;

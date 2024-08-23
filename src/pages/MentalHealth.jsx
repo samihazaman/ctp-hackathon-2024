@@ -6,6 +6,8 @@ import mentalhealth_3 from "../assets/Mental-Health-images/mental_health3.png";
 
 
 const MentalHealth = () => {
+    /*Plan For tomorrow adding in interactiveness and depending on the user's prompted answer 
+    decide what kind of information needs to be printed*/
     return (
         <div className="grid grid-cols-1 gap-10 pl-20 py-10 md:grid-cols-2 mr-10">
 
