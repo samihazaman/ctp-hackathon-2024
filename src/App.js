@@ -8,7 +8,7 @@ import MentalHealth from './pages/MentalHealth';
 import Safety from './pages/Safety';
 import Quiz from './pages/Quiz';
 import QuizView from './pages/QuizView'
-
+import Footer from './components/Footer'
 
 
 function App() {
@@ -25,9 +25,12 @@ function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/quizview" element={<QuizView />} />
         </Routes>
+
+        <Footer/>
       </div>
 
       <div>
+
       </div>
     </Router>
   );
