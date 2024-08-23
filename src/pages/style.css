@@ -23,3 +23,138 @@
     color: white;
     border-radius: 5px;
 }
+
+/* Home.css */
+.hero-section {
+    background-image: url('../assets/cuny-skyline.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    max-width: 700px;
+    padding: 40px;
+}
+
+.content-section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+.spotlight-section {
+    padding: 10px;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.spotlight-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.learn-more-btn {
+    text-decoration: none;
+    background-color: #3a73c1;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 10px; 
+}
+
+
+
+.quiz-section {
+    padding: 30px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.start-quiz-btn {
+    text-decoration: none;
+    background-color: #3a73c1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
+}
+
+.start-quiz-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.start-quiz-btn:active {
+    background-color: #003d7a;
+    transform: scale(1);
+}
