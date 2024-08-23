@@ -409,8 +409,8 @@ const Housing = () => {
     decide what kind of information needs to be printed*/
     const renderDefaultContent = () => (
         <div className="grid grid-cols-1 gap-10 items-center justify-center px-4 pl-20 py-10 md:grid-cols-1 md:px-20 md:py-10 mr-5">
-            <div className='flex md:flex-col items-center md:gap-10'>
-                <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col items-center md:gap-10'>
+                <div className='flex flex-col text-center justify-center items-center'>
                         <h1 className="font-bold text-xl mb-4 italic">
                             HOUSING INSECURITY AND HOMELESSNESS  
                         </h1>
@@ -426,8 +426,8 @@ const Housing = () => {
             <div className="flex justify-center items-center flex-shrink-0 pr-10">
                 <img 
                     src={housing_stats} 
-                    alt="Food Insecurity Stats" 
-                    className='w-full max-w-[800px] h-auto  drop-shadow-xl z-0' 
+                    alt="Housing Insecurity Stats" 
+                    className='w-full max-w-[800px] h-auto drop-shadow-xl z-0' 
                 />
             </div>  
 
