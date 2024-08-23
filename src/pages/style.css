@@ -14,6 +14,7 @@
     min-height: 100vh;
     background: linear-gradient(to right, #f0f4f8, #c0e0ff); 
     padding: 20px; 
+    margin-top: -20px;
 }
 
 
@@ -31,7 +32,7 @@
     font-size: 1.2rem;
     color: #2d3748; 
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 800px; 
     padding: 0 15px; 
   }
@@ -57,6 +58,16 @@
     transform: scale(0.98); 
   }
   
+
+  .quizImage {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    margin: 20px 0; 
+    border-radius: 8px; 
+  }
+  
+
 
 .submitBtn {
     padding: 10px;
