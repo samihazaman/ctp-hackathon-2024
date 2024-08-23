@@ -12,6 +12,7 @@ import QuesEight from "../components/QuesEight";
 import QuesNine from "../components/QuesNine";
 import QuesTen from "../components/QuesTen";
 import QuesEleven from "../components/QuesEleven";
+import Food from "./Food";
 
 
 import { Link, useNavigate } from "react-router-dom";
@@ -28,6 +29,7 @@ const QuizView = () => {
   const [selectedQuesNineOption, setSelectedQuesNineOption] = useState(""); //question nine answer
   const [selectedQuesTenOption, setSelectedQuesTenOption] = useState(""); //question ten answer
   const [selectedQuesElevenOption, setSelectedQuesElevenOption] = useState(""); //question eleven answer
+  const [submitted, setSubmitted] = useState(false); //submitted quiz or not
   const navigate = useNavigate();
   var selectedCollege ="";
 
@@ -72,13 +74,13 @@ const QuizView = () => {
   };
 
   const handleSubmit = () => {
-    
+    setSubmitted(true);
     if (selectedQuesFourOption === "No" || selectedQuesFiveOption === "Yes") {
       navigate("/housing");
 
     }
     else if (selectedQuesSixOption === "No" || selectedQuesSevenOption === "Yes") {
-      navigate("/food");
+      navigate("/food",{state: {college: selectedQuesTwoOption}});
     }
     else if (selectedQuesEightOption === "Yes" || selectedQuesNineOption === "Yes") {
       navigate("/mental-health");
@@ -99,7 +101,8 @@ const QuizView = () => {
     if (selectedQuesOneOption === "No") {
       navigate("/");
     }
-    if (selectedQuesTwoOption!=""){
+    if (selectedQuesTwoOption!==""){
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       selectedCollege = selectedQuesTwoOption;
       console.log("selected a college")
       console.log(selectedCollege)
@@ -133,6 +136,7 @@ const QuizView = () => {
                 <QuesSeven
                   onOptionChange={handleQuesSevenOptionChange}
                 ></QuesSeven>
+
               </>
             )}
             {selectedQuesThreeOption === "Mental Health" && (
@@ -159,6 +163,9 @@ const QuizView = () => {
         )}
         <button className="submitBtn" onClick={handleSubmit}> Submit</button>
       </div>
+      {submitted && selectedQuesThreeOption === "Food Insecurity" && (
+        <Food college={selectedQuesTwoOption}/>
+      )}
     </>
   );
 };

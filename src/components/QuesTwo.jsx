@@ -14,7 +14,7 @@ const QuesTwo = ({ onOptionChange }) => {
           <label htmlFor="quesTwo">Which CUNY college do you go to?</label>
           <div className="quesAns">
             <select name="college" id="college" onChange={handleOptionChange}>
-              <option value="The City College of New York">The City College of New York</option>
+              <option value="The City College Of New York">The City College Of New York</option>
               <option value="Brooklyn College">Brooklyn College</option>
               <option value="College of Staten Island">College of Staten Island</option>
               <option value="York College">York College</option>
