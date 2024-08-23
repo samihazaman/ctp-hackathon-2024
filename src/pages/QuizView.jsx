@@ -15,7 +15,7 @@ import QuesEleven from "../components/QuesEleven";
 import Food from "./Food";
 
 
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import Housing from "./Housing";
 import MentalHealth from "./MentalHealth";
 import Safety from "./Safety";
