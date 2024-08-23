@@ -11,7 +11,7 @@ const QuesThree = ({ onOptionChange }) => {
     <>
       <form>
         <div className="quesBox">
-          <label htmlFor="quesOne">
+          <label htmlFor="quesThree">
             Which of the following areas do you need help with?
           </label>
           <div className="quesAns">
