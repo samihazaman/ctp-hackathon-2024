@@ -28,7 +28,7 @@ const Home = () => {
                 Our goal is to bridge the gap between students and the resources available to address these critical needs. 
                 We provide a comprehensive guide to the services CUNY offers, ensuring you have easy access to the support you need. 
                 Additionally, our interactive quiz is designed to help you quickly find the resources that are right for you based 
-                on your specific needs and college. We’re here to help you navigate these essential services and empower you to succeed.
+                on your specific needs and college. We're here to help you navigate these essential services and empower you to succeed.
             </p>
         </section>
 
