@@ -11,7 +11,7 @@ const QuesEight = ({ onOptionChange }) => {
     <>
       <form>
         <div className="quesBox">
-          <label htmlFor="quesOne">
+          <label htmlFor="quesEight">
           Are you experiencing stress, anxiety, or depression that is affecting your daily life or academic performance?
 
           </label>

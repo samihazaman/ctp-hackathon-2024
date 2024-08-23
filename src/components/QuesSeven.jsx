@@ -11,7 +11,7 @@ const QuesSeven = ({ onOptionChange }) => {
     <>
       <form>
         <div className="quesBox">
-          <label htmlFor="quesOne">
+          <label htmlFor="quesSeven">
           Have you had to skip meals or eat less due to lack of money in the past month?
 
           </label>

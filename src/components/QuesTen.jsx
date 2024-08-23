@@ -11,7 +11,7 @@ const QuesTen = ({ onOptionChange }) => {
     <>
       <form>
         <div className="quesBox">
-          <label htmlFor="quesOne">
+          <label htmlFor="quesTen">
           Are you feeling safe on campus?
           </label>
           <div className="quesAns">
