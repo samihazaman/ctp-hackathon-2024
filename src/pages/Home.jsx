@@ -79,7 +79,12 @@ const Home = () => {
                 </div>
             </section>
 
-          
+            <section className="quiz-section">
+                <h3 className="quiz-title">
+                      Take our interactive quiz specifically catered to your college campus to help match you to the right resource:
+               </h3>
+                <Link to="/quiz" className="start-quiz-btn">Get Started</Link>
+            </section>
 
 
     </div>
