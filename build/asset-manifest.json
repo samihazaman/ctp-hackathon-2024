@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/cuny-students-matter/static/css/main.b12d7665.css",
+    "main.js": "/cuny-students-matter/static/js/main.f6d21f84.js",
+    "static/js/453.b582317b.chunk.js": "/cuny-students-matter/static/js/453.b582317b.chunk.js",
+    "static/media/resources.png": "/cuny-students-matter/static/media/resources.74fd7055b5b5b2592cee.png",
+    "static/media/rightimage_2.png": "/cuny-students-matter/static/media/rightimage_2.2681b89730c66d2cdd6a.png",
+    "static/media/hunger-students-copy.jpg": "/cuny-students-matter/static/media/hunger-students-copy.7fbd06165509fee731de.jpg",
+    "static/media/public_safety.jpg": "/cuny-students-matter/static/media/public_safety.c948f897d20c998622d2.jpg",
+    "static/media/public-safety.jpg": "/cuny-students-matter/static/media/public-safety.6978e24692eb500dc2b6.jpg",
+    "static/media/food+pantry.jpg": "/cuny-students-matter/static/media/food+pantry.7f986e178ed95f68d7d6.jpg",
+    "static/media/mental-health-graphic.jpg": "/cuny-students-matter/static/media/mental-health-graphic.dce91712a0042d8cba74.jpg",
+    "static/media/cuny-skyline.jpg": "/cuny-students-matter/static/media/cuny-skyline.8c9472651dc6d813e649.jpg",
+    "static/media/unsplash-image-v8IbdsPXo7U.jpg": "/cuny-students-matter/static/media/unsplash-image-v8IbdsPXo7U.f0d4eedc3eec7eae4db6.jpg",
+    "static/media/housing_insecurity.jpg": "/cuny-students-matter/static/media/housing_insecurity.32c07751462d55dc6b69.jpg",
+    "static/media/mental_health3.png": "/cuny-students-matter/static/media/mental_health3.37c0c9cdd7ed2337bfa5.png",
+    "static/media/housing_1.jpg": "/cuny-students-matter/static/media/housing_1.1856d95b4eacd6a39252.jpg",
+    "static/media/housing_2.jpg": "/cuny-students-matter/static/media/housing_2.6d30c48970f4f1049980.jpg",
+    "static/media/CUNY-Hunter-College_1-1000x750.jpg": "/cuny-students-matter/static/media/CUNY-Hunter-College_1-1000x750.d0468fef27cbadfda1cc.jpg",
+    "static/media/food-stats.jpg": "/cuny-students-matter/static/media/food-stats.9b8ef17affa8fab8f546.jpg",
+    "static/media/public_safety1.png": "/cuny-students-matter/static/media/public_safety1.b9785d7527193ca956fe.png",
+    "static/media/MH+infographic.png": "/cuny-students-matter/static/media/MH+infographic.e0989205e8088b28587e.png",
+    "static/media/public_safety2.jpg": "/cuny-students-matter/static/media/public_safety2.386c7c326c5002c66f05.jpg",
+    "static/media/food-insecurity.jpg": "/cuny-students-matter/static/media/food-insecurity.f407ac9690aa3151b4c1.jpg",
+    "static/media/mental_health2.jpg": "/cuny-students-matter/static/media/mental_health2.445a404dad2f1877d7bd.jpg",
+    "static/media/mental_health1.jpg": "/cuny-students-matter/static/media/mental_health1.c0ec0d51b73d4a9a0b00.jpg",
+    "static/media/CUNY Connect logo.png": "/cuny-students-matter/static/media/CUNY Connect logo.856907559ce78a546821.png",
+    "static/media/FSA+logo2.jpg": "/cuny-students-matter/static/media/FSA+logo2.85d78c161f5ea1c84abf.jpg",
+    "static/media/cuny-housing.jpg": "/cuny-students-matter/static/media/cuny-housing.61179570c56a8f37f481.jpg",
+    "static/media/Young-person-delivering-groceries-to-elderly-couple-during-pandemic-e1604705184908.jpg": "/cuny-students-matter/static/media/Young-person-delivering-groceries-to-elderly-couple-during-pandemic-e1604705184908.e9f40e0a51541de62105.jpg",
+    "index.html": "/cuny-students-matter/index.html",
+    "main.b12d7665.css.map": "/cuny-students-matter/static/css/main.b12d7665.css.map",
+    "main.f6d21f84.js.map": "/cuny-students-matter/static/js/main.f6d21f84.js.map",
+    "453.b582317b.chunk.js.map": "/cuny-students-matter/static/js/453.b582317b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b12d7665.css",
+    "static/js/main.f6d21f84.js"
+  ]
+}
