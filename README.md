@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-CUNY Students Matter is a web application developed during a hackathon to educate CUNY students about essential resources available at their campus, such as food, housing, mental health, and safety services. The platform includes dedicated pages for each resource and features an interactive quiz that matches students with resources tailored to their specific college.
+CUNY Students Matter is a web application developed during the CUNY Tech Prep hackathon to educate CUNY students about essential resources available at their campus, such as food, housing, mental health, and safety services. The platform includes dedicated pages for each resource and features an interactive quiz that matches students with resources tailored to their specific college.
 
 ## Features
 
