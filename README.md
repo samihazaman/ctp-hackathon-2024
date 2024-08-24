@@ -31,7 +31,7 @@ cd <project-directory>
 npm install
 ```
 3. **Run the application**
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
 ```bash
 npm start
