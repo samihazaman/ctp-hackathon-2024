@@ -100,13 +100,10 @@ ul li a:hover,
 ul li a:focus {
   color: #007bff;
 }
-.quesBox {
-  border: 2px rgb(165, 161, 161) solid;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-}
-@media (min-width: 1024px) {
+
+
+
+@media (max-width: 1024px) {
   /* Tailwind's lg breakpoint */
   ul {
     display: flex;
@@ -116,6 +113,10 @@ ul li a:focus {
   ul.flex-col {
     display: none;
   }
+
+  ul.flex-col.show {
+    display: flex; /* Show dropdown when open */
+}
 }
 
 @keyframes slideDown {
@@ -147,3 +148,10 @@ animation: slideDown .4s ease-out forwards;
 animation: slideUp 1.0s ease-in forwards;
 }
 
+
+.quesBox {
+    border: 2px rgb(165, 161, 161) solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
